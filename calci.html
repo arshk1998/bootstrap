@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="shop.css">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script 
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+        
+        <script>
+            function val(v)
+            {
+                document.getElementById("t1").value+=v;
+            }
+            
+            function c()
+            {
+                document.getElementById("t1").value=00;
+            }
+            function eq()
+            {
+                document.getElementById("t1").value=eval(document.getElementById("t1").value);
+            }
+        
+        </script>
+        </head>
+    
+    <body>
+        <div class="container">
+                <div class="jumbotron text-dark text-center">
+                <h6>CALCULATOR</h6>
+                </div> 
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="t1" placeholder="00"\>
+                    </div> 
+                    <div class="col-sm-4"></div>    
+                </div>
+                <div class="row text-dark">
+                    <div class="col-sm-4"></div>
+                    <div class="btn-group col-sm-4">
+                        <button class="btn btn-secondary col-sm-3" onclick="val('1')">1</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('2')">2</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('3')">3</button>
+                        <button class="btn btn-dark col-sm-3" onclick="val('+')">+</button>
+                    </div>
+                </div>
+                <div class="row text-dark">
+                    <div class="col-sm-4"></div>
+                    <div class="btn-group col-sm-4">
+                        <button class="btn btn-secondary col-sm-3" onclick="val('4')">4</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('5')">5</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('6')">6</button>
+                        <button class="btn btn-dark col-sm-3" onclick="val('-')">-</button>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                <div class="row text-dark">
+                    <div class="col-sm-4"></div>
+                    <div class="btn-group col-sm-4">
+                        <button class="btn btn-secondary col-sm-3" onclick="val('7')">7</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('8')">8</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('9')">9</button>
+                        <button class="btn btn-dark col-sm-3" onclick="val('*')">*</button>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                <div class="row text-dark">
+                    <div class="col-sm-4"></div>
+                    <div class="btn-group col-sm-4">
+                        <button class="btn btn-secondary col-sm-3" onclick="c()">C</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('0')">0</button>
+                        <button class="btn btn-secondary col-sm-3" onclick="val('/')">/</button>
+                        <button class="btn btn-danger col-sm-3" onclick="eq()">=</button>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+    </body>
+</html>
